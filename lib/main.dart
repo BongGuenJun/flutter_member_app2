@@ -121,6 +121,12 @@ Future<void> _registerUser() async {
     );
   }
 
+  //입력필드 초기화
+  _useridController.clear();
+  _passwdController.clear();
+  _emailController.clear();
+  _nameController.clear();
+
 }
 
 
@@ -132,5 +138,5 @@ Future<void> _registerUser() async {
     ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('회원조회 기능 구현중....'))
     );
-  }
+  } //listUser
 } //_MainActivityState
